@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="ISO-8859-1">
+	<title>Geocoder</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="./geocoder.js"></script>
+
+</head>
+<body>
+
+	<div ng-app="geocoderApp" ng-controller="geocoderCtrl" style="display:table;">
+		<table style="width:100%">
+			<tr><th>ZIP Code</th><th>Latitude</th><th>Longitude</th></tr>
+			<tr ng-repeat="zip in zips | orderBy : 'zip'">
+				<td>{{ zip.zip }},</td>
+				<td>{{ zip.lat }},</td>
+				<td>{{ zip.lng }}</td>
+			</tr>
+		</table>
+		
+		<form>
+			Starting ZIP Code: <input type="text" ng-model="minRequest"><br />
+			Total # of Request: <input type="text" ng-model="maxRequest"><br />
+			<button ng-click="submit()">Submit</button>
+		</form>
+	</div>
+
+	<p><a href="https://developers.google.com/maps/documentation/geocoding/start">Google Maps Docs</a></p>
+	<p>Key: <a href="https://console.developers.google.com/apis/credentials?project=gnk-geocoder-1482790637137">Google API Manager Credentials</a></p>
+
+</body>
+</html>
