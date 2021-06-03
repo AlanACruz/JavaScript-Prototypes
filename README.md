@@ -2,9 +2,12 @@
 # JavaScript-Prototypes
 
 # git clone
+```
 git clone git@github.com:AlanACruz/JavaScript-Prototypes.git ~/git/
+```
 
 # install docker
+```
 sudo apt update
 
 sudo apt install -y \
@@ -27,16 +30,22 @@ sudo apt install -y \
    docker-ce \
    docker-ce-cli \
    containerd.io
+```
 
 # Enable non-root docker (Chromebook)
+```
 sudo usermod -aG docker $USER
 
 sudo chmod 666 /var/run/docker.sock
+```
 
 # Pull NodeJS container
+```
 docker pull node:current
+```
 
 # Run Node build from container
+```
 docker build \
     -t js-prototypes \
     ~/git/JavaScript-Prototypes
@@ -47,9 +56,12 @@ docker run \
     --rm \
     --name js-prototypes \
     js-prototypes
+```
 
 # Run Node build locally
+```
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt-get install -y nodejs
 
 node ~/git/JavaScript-Prototypes/index.js
+```
