@@ -1,5 +1,5 @@
 {
-  "name": "JavaScript-Prototypes",
+  "name": "javascript-prototypes",
   "version": "1.0.0",
   "description": "# git clone git clone git@github.com:AlanACruz/JavaScript-Prototypes.git ~/git/",
   "main": "index.js",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/AlanACruz/JavaScript-Prototypes/issues"
   },
-  "homepage": "https://github.com/AlanACruz/JavaScript-Prototypes#readme"
+  "homepage": "https://github.com/AlanACruz/JavaScript-Prototypes#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {}
 }

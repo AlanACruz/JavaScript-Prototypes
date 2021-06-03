@@ -33,7 +33,7 @@ sudo usermod -aG docker $USER
 
 sudo chmod 666 /var/run/docker.sock
 
-# Pull Maven container
+# Pull NodeJS container
 docker pull node:current
 
 # Run Node build from container
@@ -48,11 +48,8 @@ docker run \
     --name js-prototypes \
     js-prototypes
 
-# Run Maven build locally
-sudo apt-get install -y \
-   openjdk-11-jdk \
-   maven
+# Run Node build locally
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
+sudo apt-get install -y nodejs
 
-cd ~/git/Java-Prototypes
-
-mvn install
+node ~/git/JavaScript-Prototypes/index.js
