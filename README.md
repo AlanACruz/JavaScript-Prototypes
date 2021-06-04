@@ -69,6 +69,8 @@ npm install \
    chai \
    request \
    express
+
+node ~/git/JavaScript-Prototypes/index.js   
 ```
 
 # Run Mocha tests
