@@ -53,3 +53,7 @@ curl -fsSL https://deb.nodesource.com/setup_16.x | sudo bash -
 sudo apt-get install -y nodejs
 
 node ~/git/JavaScript-Prototypes/index.js
+
+# Run Mocha tests
+npm run "start-server"
+npm test
