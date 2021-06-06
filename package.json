@@ -6,6 +6,7 @@
   "scripts": {
     "start": "forever start src/index.js",
     "stop": "forever stop src/index.js",
+    "listf": "forever list",
     "test": "npx mocha 'test/**/*.js' --recursive -reporter spec"
   },
   "repository": {
