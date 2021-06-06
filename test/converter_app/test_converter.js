@@ -4,6 +4,7 @@ var expect    = require("chai").expect;
 var converter = require("../../src/converter/converter.js");
 
 describe("Color Code Converter", function() {
+  
   describe("RGB to Hex conversion", function() {
     it("converts the basic colors", function() {
       var redHex   = converter.rgbToHex(255, 0, 0);
@@ -27,4 +28,5 @@ describe("Color Code Converter", function() {
       expect(blue).to.deep.equal([0, 0, 255]);
     });
   });
+  
 });
