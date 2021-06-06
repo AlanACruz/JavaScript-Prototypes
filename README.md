@@ -67,14 +67,17 @@ npm install \
    --save \
    mocha \
    chai \
+   fs \
    request \
-   express
+   express \
+   nohup 
 
-node ~/git/JavaScript-Prototypes/index.js   
+node ~/git/JavaScript-Prototypes/src/index.js   
 ```
 
 # Run Mocha tests
 ```
-npm run "start-server"
+npm starts
 npm test
+npm stop
 ```

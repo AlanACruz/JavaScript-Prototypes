@@ -32,7 +32,7 @@ FreeEnterpriseJS.utils = {
 			} else {
 				str+= p + ': { \n' + print( o[ p ] ) + '}'
 			}
-    		}
+    	}
 		
 		return str;
 	}
