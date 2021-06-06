@@ -4,8 +4,8 @@
   "description": "# git clone git clone git@github.com:AlanACruz/JavaScript-Prototypes.git ~/git/",
   "main": "src/index.js",
   "scripts": {
-    "start": "nohup node src/index.js > nohup.out &",
-    "stop": "ps -ef | grep node; echo \"kill {proccess-id}\";",
+    "start": "forever start src/index.js",
+    "stop": "forever stop src/index.js",
     "test": "npx mocha 'test/**/*.js' --recursive -reporter spec"
   },
   "repository": {
@@ -22,8 +22,8 @@
   "dependencies": {
     "chai": "^4.3.4",
     "express": "^4.17.1",
+    "forever": "^4.0.0",
     "mocha": "^8.4.0",
-    "nohup": "^0.1.0",
     "request": "^2.88.2"
   },
   "devDependencies": {}

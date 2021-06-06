@@ -70,7 +70,7 @@ npm install \
    fs \
    request \
    express \
-   nohup 
+   forever 
 
 node ~/git/JavaScript-Prototypes/src/index.js   
 ```
