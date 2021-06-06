@@ -5,10 +5,16 @@ var app = express();
 const path = require('path');
 var fs = require('fs');
 
+
+// Host static files in ~/git/JavaScript-Prototypes/src folder
+app.use('/static/', express.static(path.join(__dirname, '')))
+
 // Define request response in root URL (/)
+/**
 app.get('/', function (req, res) {
   res.send('Hello World!')
 })
+*/
 
 // Converter
 app.get('/converter', function (req, res) {
