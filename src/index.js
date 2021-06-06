@@ -6,19 +6,23 @@ const path = require('path');
 var fs = require('fs');
 
 
+const menu = path.join(__dirname, 'menu/menu.html')
+
 // Host static files in ~/git/JavaScript-Prototypes/src folder
 app.use('/static/', express.static(path.join(__dirname, '')))
 
 // Define request response in root URL (/)
-/**
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.writeHead(200, { 'content-type': 'text/html' })
+
+  fs.createReadStream(menu).pipe(res)
 })
-*/
 
 // Converter
 app.get('/converter', function (req, res) {
   res.writeHead(200, { 'content-type': 'text/html' })
+
+  fs.createReadStream(menu).pipe(res)
 
   const file = path.join(__dirname, 'converter/converter.html');
   fs.createReadStream(file).pipe(res)
@@ -28,6 +32,8 @@ app.get('/converter', function (req, res) {
 app.get('/free-enterprise', function (req, res) {
   res.writeHead(200, { 'content-type': 'text/html' })
 
+  fs.createReadStream(menu).pipe(res)
+
   const file = path.join(__dirname, 'free-enterprise/free-enterprise.html');
   fs.createReadStream(file).pipe(res)
 })
@@ -36,6 +42,8 @@ app.get('/free-enterprise', function (req, res) {
 app.get('/geocoder', function (req, res) {
   res.writeHead(200, { 'content-type': 'text/html' })
 
+  fs.createReadStream(menu).pipe(res)
+
   const file = path.join(__dirname, 'geocoder/geocoder.html');
   fs.createReadStream(file).pipe(res)
 })
@@ -43,6 +51,8 @@ app.get('/geocoder', function (req, res) {
 // Physics Simulation
 app.get('/physics-simulation', function (req, res) {
   res.writeHead(200, { 'content-type': 'text/html' })
+
+  fs.createReadStream(menu).pipe(res)
 
   const file = path.join(__dirname, 'physics-simulation/physics-simulation.html');
   fs.createReadStream(file).pipe(res)

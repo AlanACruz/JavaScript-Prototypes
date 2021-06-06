@@ -72,12 +72,14 @@ npm install \
    express \
    forever 
 
-node ~/git/JavaScript-Prototypes/src/index.js   
-```
-
-# Run Mocha tests
-```
 npm starts
+
 npm test
+
 npm stop
 ```
+
+# Browser Access
+Chromebook: Disable chrome://flags -> 'Block insecure private network requests' and then restart the device. 
+
+From browser -> localhost:3000
