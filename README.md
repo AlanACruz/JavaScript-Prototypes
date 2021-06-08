@@ -39,7 +39,7 @@ sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
 ```
 
-# Pull NodeJS container
+# Pull NodeJS image
 ```
 docker pull node:current
 ```
