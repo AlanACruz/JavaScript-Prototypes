@@ -2,7 +2,7 @@ https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-moc
 
 var express = require("express");
 var app = express();
-var converter = require("./converter");
+var converter = require("./converter-library");
 
 app.get("/rgbToHex", function(req, res) {
 
