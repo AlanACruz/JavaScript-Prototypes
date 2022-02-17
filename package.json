@@ -22,7 +22,7 @@
   "homepage": "https://github.com/AlanACruz/JavaScript-Prototypes#readme",
   "dependencies": {
     "chai": "^4.3.6",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "forever": "^4.0.3",
     "mocha": "^9.2.0",
     "request": "^2.88.2"
