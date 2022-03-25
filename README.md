@@ -27,7 +27,7 @@ docker run \
 ```
 
 # NPM Script Commands
-https://github.com/AlanACruz/JavaScript-Prototypes/blob/e5c7ba4dc63ec9cdfa9131256f4fde01c60c7827/package.json#L6-L10
+https://github.com/AlanACruz/JavaScript-Prototypes/blob/e5c7ba4dc63ec9cdfa9131256f4fde01c60c7827/package.json#L6-L11
 
 # Run Node Build Locally
 ```
